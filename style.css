@@ -1,0 +1,45 @@
+body{
+    background:url("./10941807.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align:center;
+    color:white;
+    
+
+}
+
+#box{
+    background:rgba(0,0,0,0.5);
+    margin-top:10%;
+    height:500px;
+}
+
+#box p{
+    letter-spacing:4px;
+}
+
+#box #weather{
+    width:500px;
+    height:40px;
+}
+
+#box .btn{
+   margin-left:5px;
+   border-radius:10px;
+}
+
+#results{
+    margin-top:5%;
+    font-size: 30px;
+    color:black;
+}
+
+#result1 #result3{
+    letter-spacing:4px;
+}
+
+
+#result1 #result3{
+    letter-spacing:4px;
+}
