@@ -11,32 +11,40 @@
     <link href="style.css" rel="stylesheet">
 
 </head>
-<body>
+<body class="bg-image">
     
-    <div class="container" id="box">
+    <div class="container" id="box"  >
             <p class="display-5">CHECK TODAY'S WEATHER</p><br>
         
-                <input type="text" id="weather" placeholder="Enter a city,contry or place" value="" required>
-                <input class="btn btn-danger" type="submit" value="Search" id="search" onclick="check()">
+                <input class="form-control" type="text" id="weather" placeholder="Enter a city,contry or place" value="" required>
+                <input class="btn btn-danger mt-5" type="submit" value="Search" id="search" onclick="check()">
            
-
-                <div class="container card" id ="results">
-                    <b><div class=" card-header display-6" id="resultdisplay"> </div></b>
-                    <div class="row card-body bg-info">
-                        <div class="col-sm-3" id="result1">
-
-                        </div>
-                        <div class="col-sm-3" id="result2">
-
-                        </div>
-                        <div class="col-sm-3" id="result3">
-
-                        </div>
-                        <div class="col-sm-3" id="result4">
-
-                        </div>
-                    </div>
+       
+             <div class="row" > 
+                 <div class= 'col-12'>
+                    <table class="table table-light table-bordered" id="results">
+                        <caption id="resultdisplay" class="caption-top display-5"></caption>
+                        <thead class=>
+                            <tr>
+                                <th>Temperature</th>
+                                <th>Feels like</th>
+                                <th>Humidity</th>
+                                <th>Pressure</th>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td id="result1"></td>
+                                <td id="result2"></td>
+                                <td id="result3"></td>
+                                <td id="result4"></td>
+                            </tr>
+                        </thead>
+                    </table>
                 </div>
+
+            </div>        
+                
     </div>
 
    
@@ -44,12 +52,14 @@
     <script src="jquery-3.6.0.js"></script>
     <script>
         $("#results").hide();
-
+        
         $(document).ready(function(){
-             $("#search").click(function(){
-                $("#results").show(1000)
-            })
-        })
+                $("#search").click(function(){
+                   $("#results").show(1000)
+               })
+           })
+
+        
 
 
     </script>
